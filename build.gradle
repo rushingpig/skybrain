@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile  fileTree(dir: 'lib', include: '*.jar')
+
+    testCompile 'junit:junit:4.12'
+}
